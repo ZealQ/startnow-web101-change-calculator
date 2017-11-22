@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+html {
+font-size: 20px;
+}
+
+.output { 
+color: white;
+}
+
+.panel {
+  background: hsl(125, 65%, 34%);
+  border: solid white;
+  }
+
+  .results {
+  font-size: 1em;
+  color: #FFFFFF;
+  }
+  
+  .dropdown {
+  margin-bottom: 50px;
+  }
+  
+  .inline-block {
+  display: inline-block;
+  }
+  
+  .center {
+  width: 90%;
+  margin: 0 auto 30px;
+  }
+
+  body {
+    background: url("https://cdn.vox-cdn.com/thumbor/niV8z1lFzAgX4rZd4zqCBbKvWhQ=/0x0:911x683/920x613/filters:focal(0x0:911x683):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/49543957/vintage-cash-register_mikael-damkier_shutterstock.0.jpg");
+    background-size: cover;
+  }
+</style>
+  </head>
+
+
+  <body>
+<!-- the title  class is just for color effect -->
+        <h1 text = "Change Calculator"class="output  output">Change Calculator</h1>
+        
+
+
+<!--20 Dollars -->            
+<div class="form-group col-xs-12 col-md-3">     
+    <p><img src="http://images.dailykos.com/images/364993/story_image/20-bill.jpg?1486854566"style==“width:165px;height:165px;” ></p>
+    <p id="20-dollars-output" class="dollars-output output"> </p>
+</div>
+
+<!--10 Dollars -->            
+<div class="form-group col-xs-12 col-md-3">     
+    <p><img src="http://www.emersonkent.com/images/hamilton_ten_dollar_bill.jpg"style==“width:165px;height:165px;” ></p>
+    <p id="10-dollars-output" class="dollars-output output" > </p>
+</div>
+
+<!--5 Dollars -->            
+<div class="form-group col-xs-12 col-md-3">     
+    <p><img src="https://savemoneyfastwithfives.files.wordpress.com/2014/12/fivedollarbill.jpg"style==“width:165px;height:165px;” ></p>
+    <p id="5-dollars-output" class="dollars-output output" > </p>
+</div>
+
+<!--2 Dollars -->            
+<div class="form-group col-xs-12 col-md-3">     
+    <p><img src="https://www.collectons.com//images/items/2013/06/14/1371244271.jpg"style==“width:165px;height:165px;” ></p>
+    <p id="2-dollars-output" class="dollars-output output" > </p>
+</div>
+
+<!--1 Dollars -->            
+<div class="form-group col-xs-12 col-md-3">     
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Onedolar2009series.jpg/1200px-Onedolar2009series.jpg"style==“width:165px;height:165px;” ></p>
+    <p id="dollars-output" class="dollars-output output" > </p>
+</div>
+<!-- the panel where it all takes place-->
+    <div class="container">
+        <div class="row">
+         <div class="col-md-6 col-md-offset-3">
+           <div class="panel panel-primary text-center">
+             <div class="panel-heading">
+                 <!-- title on panel-->
+               <h4 class="panel-title">Change Calculator</h4>
+               </div>
+                <div class="error">
+                  Please enter numeric value
+                </div>
+                <div class="panel-body">
+                <form class="form-vertical">
+                 <div class="form-group center">
+                   <label for="">Total:</label>
+                   <!-- the total at the  end-->
+                   <input  id="amount-due" class="amount form-control" type ="number" placeholder="TOTAL" min="1">
+                   <!-- the amount the buyer gives-->
+                   <input  id="amount-received" class="amount form-control" type="number" placeholder="PAYED" min="1">
+                   <!-- the button that calculates it all-->
+                   <button type="button" id="calculate-change">Total</button>
+                   <!-- the results after the calculation-->
+                   <p id="output"class="amount form-control" placeholder="TOTAL" >
+                  </div>
+                 <div class="form-group inline-block"></div>
+                  
+<!--quarters -->            
+<div class="form-group col-xs-12 col-md-3">     
+        <p><img src="http://cointrackers.com/img/coins/1983-d-washington-quarter.png"style==“width:165px;height:165px;” ></p>
+        <p id="quarters-output" class="coin-output  output"> </p>
+    </div>
+    
+    <!--dimes -->            
+    <div class="form-group col-xs-12 col-md-3">     
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/2017-D_Roosevelt_dime_obverse_transparent.png/1200px-2017-D_Roosevelt_dime_obverse_transparent.png"style==“width:165px;height:165px;” ></p>
+        <p id="dimes-output" class="coin-output  output"> </p>
+    </div>
+    
+    <!--nickels -->            
+    <div class="form-group col-xs-12 col-md-3">     
+        <p><img src="http://cointrackers.com/img/coins/1988-d-jefferson-nickel.png"style==“width:165px;height:165px;” ></p>
+        <p id="nickels-output" class="coin-output  output"> </p>
+    </div>
+    
+    <!--pennys -->            
+    <div class="form-group col-xs-12 col-md-3">     
+        <p><img src="http://journalforemergingleaders.com/wp-content/uploads/2016/01/Penny-obverse.png"style==“width:165px;height:165px;” ></p>
+        <p id="pennies-output" class="coin-output  output"> </p>
+    </div>
+
+
+
+
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"charset="utf-8" ></script>
+  
+
+  </body>
+</html>
